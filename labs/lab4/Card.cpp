@@ -1,0 +1,136 @@
+#include "Card.h"
+using namespace std;
+
+//default constructor
+Card::Card() {
+	this->rank = -1;
+	this->suit = -1;
+}
+//constructor
+Card::Card(int rank, int suit) {
+	this->rank = rank;
+	this->suit = suit;
+}
+
+//copy constructor
+Card::Card(const Card& old_card){
+	this->rank = old_card.rank;
+	this->suit = old_card.suit;
+} 
+
+//operater overload
+Card& Card::operator=(const Card& old_card){
+	if (this != &old_card){
+		this->rank = old_card.rank;
+		this->suit = old_card.suit;
+	}
+}
+
+//mutators and accessors
+void Card::set_rank(int rank) {
+	this->rank = rank;
+	return;
+}
+
+int Card::get_rank() const {
+	return this->rank;
+}
+
+void Card::set_suit(int suit) {
+	this->suit = suit;
+	return;
+}
+
+int Card::get_suit() const {
+	return this->suit;
+}
+
+
+//other functions
+string Card::map_suit() {
+	switch (this->suit){
+		case 0: return "clubs";
+		case 1: return "diamonds";
+		case 2: return "hearts";
+		default: return "spades";
+	}
+}
+
+string Card::map_rank() {
+	switch (this->rank){
+		case 0: return "2";
+		case 1: return "3";
+		case 2: return "4";
+		case 3: return "5";
+		case 4: return "6";
+		case 5: return "7";
+		case 6: return "8";
+		case 7: return "9";
+		case 8: return "10";
+		case 9: return "J";
+		case 10: return "Q";
+		case 11: return "K";
+		default: return "A";
+	}
+}
+
+string Card::map_rank(int r) {
+	switch (r) {
+		case 0: return "2";
+		case 1: return "3";
+		case 2: return "4";
+		case 3: return "5";
+		case 4: return "6";
+		case 5: return "7";
+		case 6: return "8";
+		case 7: return "9";
+		case 8: return "10";
+		case 9: return "J";
+		case 10: return "Q";
+		case 11: return "K";
+		default: return "A";
+	}
+}
+
+int Card::map_rank(string s) {
+	if (s == "2")
+		return 0;
+	if (s == "3")
+		return 1;
+	if (s == "4")
+		return 2;
+	if (s == "5")
+		return 3;
+	if (s == "6")
+		return 4;
+	if (s == "7")
+		return 5;
+	if (s == "8")
+		return 6;
+	if (s == "9")
+		return 7;
+	if (s == "10")
+		return 8;
+	if (s == "J")
+		return 9;
+	if (s == "Q")
+		return 10;
+	if (s == "K")
+		return 11;
+	if (s == "A")
+		return 12;
+}
+
+bool Card::is_same_rank(string r) {
+	int rank = map_rank(r);
+	if (this->rank == rank) {
+		return true;
+	}
+	else
+		return false;
+}
+
+void Card::print_card() {
+	cout<<map_suit()<<" "<<map_rank();
+	return;
+}

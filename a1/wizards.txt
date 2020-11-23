@@ -1,0 +1,21 @@
+20
+Dumbledore 190199 wizbiz101 Headmaster 9000
+Harry_Potter 898989 scardude99 Student 0
+Gandalf 123456 gr3ywiz Teacher 9001
+Hermione_Granger 078103 expeLL1armus Student 0
+Baba_Yaga 452789 slAv1cL0r3 Student 63
+Aggie_Cromwell 845763 ha110w33N Teacher 0
+Minerva_Mcgonagall 761 Cats333 Teacher 0
+Severus_Snape 7633 potionsRule Teacher 0
+Merlin 102938 Kingsmen007 Teacher 650
+Micky_Mouse 190023 diDn3y Student 2
+Ron_Weasley 588173 knightToH3 Student 0
+Dave_Stutler 320100 aPPr3ntice Student 1
+Balthazar_Blake 420100 AppRent1c3 Teacher 20
+Jafar 822 IRuleAgrabah Teacher 40
+Sirius_Black 2431 escaped46 Teacher 5
+Luna_Lovegood 111 NotImpossible74 Student 0
+White_Witch 82367 RuleNarnia282 Teacher 0
+Remus_Lupin 7765 WolfMan10 Teacher 3
+Cassandra 0988 ISeeUrFuture Student 0
+Circe 870 ILoveAnimals Teacher 0

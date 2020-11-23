@@ -1,0 +1,23 @@
+Name: Xinwei Lin
+ONID: 933332253
+Section: CS 162
+Assignment 4, due 8/14/2020
+
+Description:
+    This program will simulate the linked list with some of its functionalities, including  add a 
+    node to the front or back, print all items in it, clear the entire list, insert a node in the middle 
+    of the list, and sort the list in both direction. Additionally, it could count how many prime numebrs
+    in the list, but it is not the functionality of the linked list.
+
+Instructions:
+    compile:
+        make
+    
+    run my program:
+        ./prog
+
+Limitations: 
+    none
+
+Extra credit:
+    none
